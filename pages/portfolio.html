@@ -3,55 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Bootstrap-->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/> -->
+
     <link rel="stylesheet" href="../styles.css" />
+    <title>Virginia B.</title>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <title>VB - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"/>
   </head>
 
   <body>
-    <div>
-      <a href="../index.html"
-        ><img id="home-button" src="../Assets/home-logo2.png" alt="Home"
-      /></a>
-    </div>
-    <div>
-      <nav>
-        <a class="menu" href="../index.html">Home</a>
-        <a class="menu" href="./Portfolio.html">Portfolio</a>
-        <a class="menu" href="./Precios.html">Precios</a>
-        <a class="menu" href="./Contacto.html">Contacto</a>
-        <a class="menu" href="./ToS.html">ToS</a>
-      </nav>
-    </div>
+    <header>
+      <div class="header-left">
+       <a href="../index.html"><img id="home-button" src="../assets/logo.png" alt="VB"/></a>
+      </div>
 
-    <main>
-      <h2 class="subtitulos">Mis Tabajos</h2>
-      <img src="../Assets/sample.png" alt="Ejemplo 1" />
-      <img src="../Assets/sample.png" alt="Ejemplo 2" />
-      <img src="../Assets/sample.png" alt="Ejemplo 3" />
+       <nav>
+         <ul class="nav-menu">
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../pages/portfolio.html">portfolio</a></li>
+            <li><a href="../pages/precios.html">precios</a></li>
+            <li><a href="../pages/tos.html">terminos y condiciones</a></li>
+            <li><a href="../pages/contacto.html">contacto</a></li>
+         </ul>
+        </nav>
+      </header>
+
+    <main class="main-portfolio">
+      <div>
+        <h2 class="subtitulos">mis tabajos</h2>
+      </div>
+
+      <div class="ejemplos-trabajos">
+        <img src="../Assets/sample.png" alt="Ejemplo 1" />
+        <img src="../Assets/sample.png" alt="Ejemplo 2" />
+        <img src="../Assets/sample.png" alt="Ejemplo 3" />
+        <img src="../Assets/sample.png" alt="Ejemplo 4" />
+        <img src="../Assets/sample.png" alt="Ejemplo 5" />
+        <img src="../Assets/sample.png" alt="Ejemplo 6" />
+        <img src="../Assets/sample.png" alt="Ejemplo 7" />
+        <img src="../Assets/sample.png" alt="Ejemplo 8" />
+        <img src="../Assets/sample.png" alt="Ejemplo 9" />
+      </div>
     </main>
 
     <footer>
       <div>
-        <a href="https://discord.com/" target="_blank"
-          ><img class="socials-icons" src="../Assets/discord.png" alt="Discord"
-        /></a>
-        <a href="https://www.instagram.com/" target="_blank"
-          ><img
-            class="socials-icons"
-            src="../Assets/instagram.png"
-            alt="Instagram"
-        /></a>
-        <a href="http://wwww.tiktok.com" target="_blank"
-          ><img class="socials-icons" src="../Assets/tiktok.png" alt="TikTok"
-        /></a>
+        <a href="https://discord.com/" target="_blank"><img class="socials-icons" src="../assets/discord.png" alt="Discord"/></a>
+      </div>
+
+      <div>
+        <a href="https://www.instagram.com/" target="_blank"><img class="socials-icons" src="../assets/instagram.png" alt="Instagram"/></a>
+      </div>
+
+      <div>
+        <a href="http://wwww.tiktok.com" target="_blank"><img class="socials-icons" src="../assets/tiktok.png" alt="TikTok"/></a>
       </div>
     </footer>
+
+        <!--Bootstrap Script-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> -->
   </body>
 </html>

@@ -1,77 +1,265 @@
 @font-face {
   font-family: "GrandSlang";
-  src: url(/Assets/GrandSlang-Roman.ttf);
+  src: url(/assets/GrandSlang-Roman.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gyahegi";
-  src: url(Assets/Gyahegi.otf);
+  src: url(/assets/Gyahegi.otf);
   font-weight: normal;
   font-style: normal;
 }
 
-/* GENERAL */
-/* HEADER */
-.menu {
-  font-family: "nunito", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   color: #dfd4be;
-  font-size: 20px;
+  font-family: "nunito", sans-serif;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.menu:hover {
-  font-weight: 900;
-}
-
-/* MAIN */
-body {
   background-color: #1e2125;
+  border: 1px solid red;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  margin: 20px 100px 0 100px;
+  max-height: 10vh;
+}
+
+#home-button {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  max-height: 65px;
+  max-width: 120px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: end;
+  gap: 22px;
+  align-items: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: 630;
+  font-size: 16px;
+  height: 100%;
+}
+
+.nav-menu a:hover {
+  color: #b09d76;
+}
+
+.home-page{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100px;
+  min-height: 80vh;
+}
+
+#titulo-trabajo {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 80px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "GrandSlang", serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 200px;
+  line-height:150px;
+}
+
+.estrellita {
+  text-align: center;
+  font-size: 90px;
+  line-height: 70px;
 }
 
 .subtitulos {
-  font-family: "GrandSlang", sans-serif;
-  color: #dfd4be;
+  margin: 80px 0;
+  font-family: "GrandSlang", serif;
+  text-transform: capitalize;
   font-size: 50px;
   font-weight: 100;
-  text-transform: capitalize;
 }
 
-/* FOOTER */
+.main-portfolio, .main-precios, .main-contacto, .main-tos {
+  margin: 0 100px 50px 100px;
+}
+
+.ejemplos-trabajos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.lista-precios {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+}
+
+.bold-text {
+  font-weight: bolder;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: end;
+  column-gap: 30px;
+  margin: 0 100px;
+  max-height: 5vh;
+}
+
 .socials-icons {
   width: 30px;
   height: 30px;
 }
 
-/* INDEX */
-#titulo-trabajo {
-  color: #dfd4be;
-  font-family: "nunito", sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: bold;
+
+
+/* TABLETS */
+@media (max-width: 1199px) {
+  header {
+  grid-template-columns: 0.5fr 1.5fr;
+  margin: 10px 20px;
+  }
+
+  .nav-menu{
+    /* padding-top: 20px; */
+    font-size: 14px;
+    justify-content: end;
+    gap: 12px;
+  }
+
+  main {
+      margin: 0 20px;
+  }
+
+  h1 {
+    font-size: 110px;
+    line-height: 85px;
+  }
+
+  #titulo-trabajo {
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  .estrellita {
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+
+  footer {
+    align-items: center;
+    column-gap: 30px;
+    margin: 0 20px 50px 20px;
+  }
+
+  .socials-icons {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-h1 {
-  color: #dfd4be;
-  font-family: "GrandSlang", sans-serif;
-  text-transform: uppercase;
-  font-size: 200px;
-  font-weight: 100;
+
+/* MOBILE */
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    text-align: center;
+    max-height: 50vh;
+  }
+  
+  .header-left, #home-button {
+    padding: 0;
+  }
+  
+  .nav-menu{
+    flex-direction: column;
+    font-size: 12px;
+    gap: 12px;
+    padding: 0;
+  }
+  
+  .home-page {
+    margin: 0 20px;
+    max-height: 40vh;
+  }
+  
+  h1 {
+    font-size: 60px;
+    line-height: 50px;
+  }
+  
+  #titulo-trabajo {
+    font-size: 10px;
+    line-height: 30px;
+  }
+  
+  .estrellita {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  
+  .subtitulos{
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
 }
 
-.estrellita {
-  color: #dfd4be;
-  font-size: 90px;
+  footer {
+    align-items: center;
+    column-gap: 20px;
+    max-height: 10vh;
+  }
+  
+  .socials-icons {
+    width: 25px;
+    height: 25px;
+  }
 }
 
-/* PRECIOS */
+
+
+
+
+
+
+
+
+/* HASTA ACA */
+/* 
+}
+
+
 .lista-precios {
-  color: #dfd4be;
-  font-family: "nunito", sans-serif;
   font-size: 16px;
 }
 
@@ -79,24 +267,13 @@ h1 {
   font-weight: 800;
 }
 
-/* CONTACTO */
 .etiquetas {
-  color: #dfd4be;
-  font-family: "nunito", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .input-box {
-  font-family: "nunito", sans-serif;
   font-size: 16px;
   color: #1e2125;
-}
-
-/* TOS */
-.text {
-  color: #dfd4be;
-  font-family: "nunito", sans-serif;
-  font-size: 20px;
-}
+} */
