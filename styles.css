@@ -1,6 +1,6 @@
 @font-face {
   font-family: "GrandSlang";
-  src: url(/assets/GrandSlang-Roman.ttf);
+  src: url(/assets/grandSlang-Roman.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -73,14 +73,16 @@ header {
 }
 
 #titulo-trabajo {
+  margin: 50px 0 15px 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
-  line-height: 80px;
+
 }
 
 h1 {
+  margin: 0;
   text-align: center;
   font-family: "GrandSlang", serif;
   text-transform: uppercase;
@@ -90,13 +92,14 @@ h1 {
 }
 
 .estrellita {
+  margin: 0;
   text-align: center;
   font-size: 90px;
   line-height: 70px;
 }
 
 .subtitulos {
-  margin: 80px 0;
+  margin: 80px 0 40px 0;
   font-family: "GrandSlang", serif;
   text-transform: capitalize;
   font-size: 50px;
@@ -107,20 +110,34 @@ h1 {
   margin: 0 100px 50px 100px;
 }
 
-.ejemplos-trabajos {
+.galeria {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  row-gap: 50px;
+  gap: 30px
 }
 
-.lista-precios {
+.ejemplos {
+  height: 300px;
+}
+
+.leyenda {
+  text-align: center;
+  font-weight: 15px;
+}
+
+.precios {
   display: flex;
-  flex-direction: column;
   gap: 20px;
+  justify-content: center;
   align-items: center;
-  list-style: none;
+  gap: 50px
+}
+.tarjeta-precio {
+  height: 500px;
+  width: 300px;
+  background-color: #b09d76;
 }
 
 .bold-text {
@@ -133,8 +150,7 @@ footer{
   justify-content: center;
   align-items: end;
   column-gap: 30px;
-  margin: 0 100px;
-  max-height: 5vh;
+  margin: 30px 100px 20px 100px;
 }
 
 .socials-icons {
