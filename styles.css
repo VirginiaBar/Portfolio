@@ -16,7 +16,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -69,7 +69,7 @@ header {
   justify-content: center;
   align-items: center;
   margin: 0 100px;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 #titulo-trabajo {
@@ -78,11 +78,11 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
-
 }
 
 h1 {
   margin: 0;
+  margin-bottom: 20px;
   text-align: center;
   font-family: "GrandSlang", serif;
   text-transform: uppercase;
@@ -98,16 +98,17 @@ h1 {
   line-height: 70px;
 }
 
+.main-portfolio, .main-precios, .main-contacto, .main-tos {
+  margin: 0 100px 50px 100px;
+  min-height: 65vh;
+}
+
 .subtitulos {
-  margin: 80px 0 40px 0;
+  margin: 80px 0 50px 0;
   font-family: "GrandSlang", serif;
   text-transform: capitalize;
   font-size: 50px;
   font-weight: 100;
-}
-
-.main-portfolio, .main-precios, .main-contacto, .main-tos {
-  margin: 0 100px 50px 100px;
 }
 
 .galeria {
@@ -115,29 +116,65 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px
+  gap: 40px;
+  text-align: center;
 }
 
 .ejemplos {
+  margin-bottom: 10px;
   height: 300px;
-}
-
-.leyenda {
-  text-align: center;
-  font-weight: 15px;
+  border-radius: 15px;
 }
 
 .precios {
   display: flex;
+  justify-content: center;
+  align-items: top;
   gap: 20px;
+  gap: 50px;
+  min-height: 55vh;
+}
+
+.tarjeta-precio {
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px
+  min-width: 300px;
+  height: 50px;
+  border-radius: 15px 15px 0 0; 
+  background-color: #dfd4be;
+  color:#1e2125;
+  font-weight: 900;
+  font-size: 20px;
 }
-.tarjeta-precio {
-  height: 500px;
-  width: 300px;
+
+.descripcion-precio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 15px 0;
+  background: linear-gradient(to bottom, white, #c2beba);
+  color: #1e2125;
+  border-radius: 0 0 15px 15px;
+}
+
+.lista-precio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.total {
+  margin-top: 20px;
+  padding: 10px 30px;
   background-color: #b09d76;
+  border-radius: 25px;
+  font-size: 20px;
+  color: white
 }
 
 .bold-text {
@@ -193,6 +230,10 @@ footer{
     line-height: 50px;
   }
 
+  .precios {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   footer {
     align-items: center;
