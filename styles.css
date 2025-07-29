@@ -92,10 +92,30 @@ h1 {
 }
 
 .estrellita {
-  margin: 0;
+  margin-top: 22px;
   text-align: center;
   font-size: 90px;
   line-height: 70px;
+  animation: inflate 1s ease-in;
+}
+
+@keyframes inflate {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(120%);
+  }
+  50% {
+    transform: scale(120%);
+  }
+  80% {
+    transform: scale(50%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+
 }
 
 .main-portfolio, .main-precios, .main-contacto, .main-tos {
@@ -124,6 +144,14 @@ h1 {
   margin-bottom: 10px;
   height: 300px;
   border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 10px 10px 10px rgb(24, 23, 23);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.ejemplos:hover {
+  transform: scale(105%);
 }
 
 .precios {
@@ -146,6 +174,7 @@ h1 {
   color:#1e2125;
   font-weight: 900;
   font-size: 20px;
+  box-shadow: 5px 5px 5px rgb(24, 23, 23);
 }
 
 .descripcion-precio {
@@ -157,6 +186,7 @@ h1 {
   background: linear-gradient(to bottom, white, #c2beba);
   color: #1e2125;
   border-radius: 0 0 15px 15px;
+  box-shadow: 5px 5px 5px rgb(24, 23, 23);
 }
 
 .lista-precio{
@@ -174,7 +204,7 @@ h1 {
   background-color: #b09d76;
   border-radius: 25px;
   font-size: 20px;
-  color: white
+  color: white;
 }
 
 .bold-text {
@@ -193,7 +223,26 @@ footer{
 .socials-icons {
   width: 30px;
   height: 30px;
+  transition: all 0.2s linear;
 }
+
+.socials-icons:hover {
+  transform: scale(112%);
+}
+
+/* 
+En principio lo había escrito así esta parte del código y funcionó igual, cuál es la diferencia?
+.socials-icons {
+  width: 30px;
+  height: 30px;
+  transition: 0.2s linear;
+}
+
+.socials-icons:hover {
+  scale: 108%;
+} */
+
+
 
 
 

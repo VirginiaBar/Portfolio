@@ -47,15 +47,15 @@ header {
         font-weight: 630;
         font-size: 16px;
         height: 100%;
-     }
-    a {
-        color: #dfd4be;
-        font-family: "nunito", sans-serif;
-        text-decoration: none;
-    }
-    a:hover {
-        color: #b09d76;
-    }
+        a {
+          color: #dfd4be;
+          font-family: "nunito", sans-serif;
+          text-decoration: none;
+          &:hover {
+            color: #b09d76;
+          }
+        }
+      }
 }
 
 .main-contacto, .main-tos {
@@ -74,20 +74,20 @@ header {
   ul {
     padding: 0 180px 0 80px;
     list-style-type: none;
-  }
-  li {
-    padding-bottom: 30px;
-  }
-  span {
-    font-weight: 800;
-  }
-  a {
-    color: #dfd4be;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  a:hover {
-    text-decoration: underline;
+    li {
+      padding-bottom: 30px;
+    }
+    span {
+      font-weight: 800;
+    }
+    a {
+      color: #dfd4be;
+      text-decoration: none;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -99,7 +99,12 @@ header {
   font-weight: 100;
 }
 
-footer{
+.bootstrap-form {
+  width: 500px;
+  margin-left: 50px;
+}
+
+footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -109,6 +114,10 @@ footer{
   .socials-icons {
     width: 30px;
     height: 30px;
+    transition: transform 0.2s linear;
+    &:hover {
+      transform: scale(112%);
+    }
   }
 }
 
