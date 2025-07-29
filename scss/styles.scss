@@ -146,11 +146,14 @@ footer {
     align-items: center;
     column-gap: 30px;
     margin: 0 20px 50px 20px;
-  }
-
-  .socials-icons {
+      .socials-icons {
     width: 30px;
     height: 30px;
+    transition: transform 0.2s linear;
+    &:hover {
+      transform: scale(112%);
+    }
+  }
   }
 }
 
@@ -170,13 +173,30 @@ footer {
     padding: 0;
   }
   
-  .nav-menu{
+  .nav-menu {
     flex-direction: column;
     font-size: 12px;
     gap: 12px;
     padding: 0;
   }
   
+  .main-tos {
+    padding: 0;
+    margin: 0;
+    ul {
+      padding: 0 50px;
+    }
+  }
+
+  .main-contacto {
+    margin: 0 50px;
+  }
+ .bootstrap-form  {
+    padding: 0;
+    margin: 0;
+    width: 300px;
+  }
+
   .subtitulos{
     text-align: center;
   }
@@ -185,10 +205,13 @@ footer {
     align-items: center;
     column-gap: 20px;
     max-height: 10vh;
+    .socials-icons {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.2s linear;
+      &:hover {
+        transform: scale(112%);
+    }
   }
-  
-  .socials-icons {
-    width: 25px;
-    height: 25px;
-  }
+}
 }
