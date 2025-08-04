@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "GrandSlang";
-  src: url(/assets/grandSlang-Roman.ttf);
+  font-family: "grandslang";
+  src: url(/assets/grandslang-roman.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gyahegi";
-  src: url(/assets/Gyahegi.otf);
+  font-family: "gyahegi";
+  src: url(/assets/gyahegi.otf);
   font-weight: normal;
   font-style: normal;
 }
@@ -84,7 +84,7 @@ h1 {
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
-  font-family: "GrandSlang", serif;
+  font-family: "grandslang", serif;
   text-transform: uppercase;
   font-weight: 100;
   font-size: 200px;
@@ -125,7 +125,7 @@ h1 {
 
 .subtitulos {
   margin: 80px 0 50px 0;
-  font-family: "GrandSlang", serif;
+  font-family: "grandslang", serif;
   text-transform: capitalize;
   font-size: 50px;
   font-weight: 100;
