@@ -1,13 +1,13 @@
 @font-face {
   font-family: "grandslang";
-  src: url(/assets/grandslang-roman.ttf);
+  src: url(./assets/grandslang-roman.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "gyahegi";
-  src: url(/assets/gyahegi.otf);
+  src: url(./assets/gyahegi.otf);
   font-weight: normal;
   font-style: normal;
 }
