@@ -76,12 +76,8 @@ header {
   }
   ul {
     padding: 0 180px 0 80px;
-    list-style-type: none;
     li {
       padding-bottom: 30px;
-    }
-    .bold-text {
-      font-weight: 800;
     }
     a {
       color: #dfd4be;
@@ -99,7 +95,7 @@ header {
 
 .subtitulos {
   margin: 80px 0 50px 0;
-  font-family: "GrandSlang", serif;
+  font-family: "grandslang", serif;
   text-transform: capitalize;
   font-size: 50px;
   font-weight: 100;

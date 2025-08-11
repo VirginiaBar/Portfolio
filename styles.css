@@ -73,7 +73,7 @@ header {
   font-size: 14px;
 }
 
-.mi-nombre {
+#mi-nombre {
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
@@ -208,10 +208,6 @@ header {
   color: white;
 }
 
-.bold-text {
-  font-weight: bolder;
-}
-
 footer{
   display: flex;
   flex-wrap: wrap;
@@ -219,21 +215,18 @@ footer{
   align-items: center;
   gap: 10px;
   margin-top: 50px;
-  /* border: 2px solid blue; */
 }
 
 .socials {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  /* border: 2px solid red; */
 }
 
 .socials-icons {
   width: 30px;
   height: 30px;
   transition: all 0.2s linear;
-  /* border: 2px solid green; */
 }
 
 .socials-icons:hover {
@@ -243,22 +236,7 @@ footer{
 .rights {
   margin: 0;
   font-size: small;
-  /* border: 1px solid purple; */
 }
-
-/* 
-En principio lo había escrito así esta parte del código y funcionó igual, cuál es la diferencia?
-.socials-icons {
-  width: 30px;
-  height: 30px;
-  transition: 0.2s linear;
-}
-
-.socials-icons:hover {
-  scale: 108%;
-} */
-
-
 
 
 
@@ -270,7 +248,6 @@ En principio lo había escrito así esta parte del código y funcionó igual, cu
   }
 
   .nav-menu{
-    /* padding-top: 20px; */
     font-size: 14px;
     justify-content: end;
     gap: 12px;
