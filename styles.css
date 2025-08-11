@@ -73,26 +73,26 @@ header {
 }
 
 #titulo-trabajo {
-  margin: 50px 0 15px 0;
+  margin: 80px 0 15px 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-h1 {
+.mi-nombre {
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
   font-family: "grandslang", serif;
   text-transform: uppercase;
   font-weight: 100;
-  font-size: 200px;
-  line-height:150px;
+  font-size: 150px;
+  line-height:120px;
 }
 
 .estrellita {
-  margin-top: 22px;
+  margin-top: 20px;
   text-align: center;
   font-size: 90px;
   line-height: 70px;
@@ -142,7 +142,7 @@ h1 {
 
 .ejemplos {
   margin-bottom: 10px;
-  height: 300px;
+  max-height: 300px;
   border-radius: 15px;
   object-fit: cover;
   box-shadow: 10px 10px 10px rgb(24, 23, 23);
@@ -175,6 +175,14 @@ h1 {
   font-weight: 900;
   font-size: 20px;
   box-shadow: 5px 5px 5px rgb(24, 23, 23);
+}
+
+.cards {
+  transition: all 0.1s linear;
+}
+
+.cards:hover {
+  transform: scale(102%);
 }
 
 .descripcion-precio {
@@ -214,20 +222,35 @@ h1 {
 footer{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: end;
-  column-gap: 30px;
-  margin: 30px 100px 20px 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+  /* border: 2px solid blue; */
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* border: 2px solid red; */
 }
 
 .socials-icons {
   width: 30px;
   height: 30px;
   transition: all 0.2s linear;
+  /* border: 2px solid green; */
 }
 
 .socials-icons:hover {
   transform: scale(112%);
+}
+
+.rights {
+  margin: 0;
+  font-size: small;
+  /* border: 1px solid purple; */
 }
 
 /* 
@@ -264,7 +287,7 @@ En principio lo había escrito así esta parte del código y funcionó igual, cu
       margin: 0 20px;
   }
 
-  h1 {
+  .mi-nombre {
     font-size: 110px;
     line-height: 85px;
   }
@@ -282,17 +305,6 @@ En principio lo había escrito así esta parte del código y funcionó igual, cu
   .precios {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  footer {
-    align-items: center;
-    column-gap: 30px;
-    margin: 0 20px 50px 20px;
-  }
-
-  .socials-icons {
-    width: 30px;
-    height: 30px;
   }
 }
 
@@ -324,7 +336,7 @@ En principio lo había escrito así esta parte del código y funcionó igual, cu
     max-height: 40vh;
   }
   
-  h1 {
+  .mi-nombre {
     font-size: 60px;
     line-height: 50px;
   }
@@ -348,12 +360,6 @@ En principio lo había escrito así esta parte del código y funcionó igual, cu
     height: auto;
 }
 
-  footer {
-    align-items: center;
-    column-gap: 20px;
-    max-height: 10vh;
-  }
-  
   .socials-icons {
     width: 25px;
     height: 25px;
