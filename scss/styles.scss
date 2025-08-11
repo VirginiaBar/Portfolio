@@ -1,16 +1,6 @@
-// Modificar el span que esta puesto como para que todos se hagan bold. 
-
-
 @font-face {
-  font-family: "GrandSlang";
-  src: url(/assets/GrandSlang-Roman.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gyahegi";
-  src: url(/assets/Gyahegi.otf);
+  font-family: "grandslang";
+  src: url(./assets/grandslang.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,32 +23,32 @@ header {
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;
   margin: 20px 100px 0 100px;
-    #home-button {
-        display: flex;
-        align-items: center;
-        padding-top: 10px;
-        max-height: 65px;
-     max-width: 120px;
-    }
-    .nav-menu {
-        display: flex;
-        justify-content: end;
-        gap: 22px;
-        align-items: center;
-        list-style-type: none;
-        text-transform: uppercase;
-        font-weight: 630;
-        font-size: 16px;
-        height: 100%;
-        a {
-          color: #dfd4be;
-          font-family: "nunito", sans-serif;
-          text-decoration: none;
-          &:hover {
-            color: #b09d76;
-          }
-        }
+  #home-button {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    max-height: 65px;
+    max-width: 120px;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: end;
+    gap: 22px;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 630;
+    font-size: 16px;
+    height: 100%;
+    a {
+      color: #dfd4be;
+      font-family: "nunito", sans-serif;
+      text-decoration: none;
+      &:hover {
+        color: #b09d76;
       }
+    }
+  }
 }
 
 .main-contacto, .main-tos {
@@ -134,28 +124,27 @@ footer {
   }
 
   .nav-menu{
-    /* padding-top: 20px; */
     font-size: 14px;
     justify-content: end;
     gap: 12px;
   }
 
   main {
-      margin: 0 20px;
+    margin: 0 20px;
   }
 
   footer {
     align-items: center;
     column-gap: 30px;
     margin: 0 20px 50px 20px;
-      .socials-icons {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.2s linear;
-    &:hover {
-      transform: scale(112%);
+    .socials-icons {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.2s linear;
+      &:hover {
+        transform: scale(112%);
+      }
     }
-  }
   }
 }
 
@@ -213,7 +202,7 @@ footer {
       transition: transform 0.2s linear;
       &:hover {
         transform: scale(112%);
+      }
     }
   }
-}
 }

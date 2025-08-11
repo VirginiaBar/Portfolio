@@ -254,10 +254,10 @@ footer{
   }
 
   main {
-      margin: 0 20px;
+    margin: 0 20px;
   }
 
-  .mi-nombre {
+  #mi-nombre {
     font-size: 110px;
     line-height: 85px;
   }
@@ -306,7 +306,7 @@ footer{
     max-height: 40vh;
   }
   
-  .mi-nombre {
+  #mi-nombre {
     font-size: 60px;
     line-height: 50px;
   }
@@ -324,11 +324,6 @@ footer{
   .subtitulos{
     text-align: center;
   }
-
-  img {
-    max-width: 100%;
-    height: auto;
-}
 
   .socials-icons {
     width: 25px;
