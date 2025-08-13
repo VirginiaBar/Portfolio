@@ -111,7 +111,7 @@ header {
 
 }
 
-.main-portfolio, .main-precios, .main-contacto, .main-tos {
+.main-portfolio, .main-precios {
   margin: 0 100px 50px 100px;
   min-height: 65vh;
 }
@@ -243,8 +243,8 @@ footer{
 /* TABLETS */
 @media (max-width: 1199px) {
   header {
-  grid-template-columns: 0.5fr 1.5fr;
-  margin: 10px 20px;
+    grid-template-columns: 0.5fr 1.5fr;
+    margin: 10px 20px;
   }
 
   .nav-menu{
@@ -285,22 +285,22 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 20px;
+    margin-top: 16px;
     text-align: center;
     max-height: 50vh;
   }
-  
-  .header-left, #home-button {
-    padding: 0;
+
+  #home-button {
+    margin-bottom: 22px;
   }
-  
-  .nav-menu{
+    
+  .nav-menu {
     flex-direction: column;
-    font-size: 12px;
-    gap: 12px;
+    font-size: 14px;
     padding: 0;
+    line-height: 6px;
   }
-  
+
   .home-page {
     margin: 0 20px;
     max-height: 40vh;

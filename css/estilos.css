@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "grandslang";
+  src: url(../assets/grandslang.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.estilos-links, .links {
+  color: #dfd4be;
+  font-family: "nunito", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+.estilos-links:hover, .links:hover {
+  text-decoration: underline;
+}
+
+.flex-center, footer .socials, footer, header .nav-menu, header #home-button {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  color: #dfd4be;
+  font-family: "nunito", sans-serif;
+  text-decoration: none;
+  background-color: #1e2125;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  margin: 20px 100px 0 100px;
+}
+header #home-button {
+  padding-top: 10px;
+  max-height: 65px;
+  max-width: 120px;
+}
+header .nav-menu {
+  justify-content: end;
+  gap: 22px;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: 630;
+  font-size: 16px;
+  height: 100%;
+}
+header .nav-menu a {
+  color: #dfd4be;
+  font-family: "nunito", sans-serif;
+  text-decoration: none;
+}
+header .nav-menu a:hover {
+  color: #b09d76;
+}
+
+.main-contacto, .main-tos {
+  margin: 0 300px 50px 100px;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-contacto h3, .main-tos h3 {
+  margin-bottom: 40px;
+  padding: 0 50px;
+  font-size: 16px;
+}
+.main-contacto ul, .main-tos ul {
+  padding: 0 180px 0 80px;
+}
+.main-contacto ul li, .main-tos ul li {
+  padding-bottom: 30px;
+}
+
+.subtitulos {
+  margin: 80px 0 50px 0;
+  font-family: "grandslang", serif;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.botones {
+  padding: 8px 24px;
+  border-radius: 10px;
+  border: none;
+  background-color: #dfd4be;
+  color: black;
+  font-weight: bold;
+}
+.botones:hover {
+  background-color: #b09d76;
+}
+
+.bootstrap-form {
+  width: 500px;
+  margin: 0 0 30px 50px;
+}
+
+.boton-tos {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+}
+footer .socials {
+  gap: 20px;
+}
+footer .socials-icons {
+  width: 30px;
+  height: 30px;
+  transition: all 0.2s linear;
+}
+footer .socials-icons:hover {
+  transform: scale(112%);
+}
+footer .rights {
+  margin: 0;
+  font-size: small;
+}
+
+/* TABLETS */
+@media (max-width: 1199px) {
+  header {
+    grid-template-columns: 0.5fr 1.5fr;
+    margin: 10px 20px;
+  }
+  header .nav-menu {
+    font-size: 14px;
+    justify-content: end;
+    gap: 12px;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    text-align: center;
+    max-height: 50vh;
+  }
+  header #home-button {
+    margin-bottom: 22px;
+  }
+  header .nav-menu {
+    flex-direction: column;
+    font-size: 14px;
+    padding: 0;
+    line-height: 6px;
+  }
+  .main-tos {
+    padding: 0;
+    margin: 0;
+  }
+  .main-tos ul {
+    padding: 0 50px;
+  }
+  .subtitulos {
+    text-align: center;
+  }
+  .main-contacto {
+    margin: 0 50px;
+  }
+  .bootstrap-form {
+    padding: 0;
+    margin: 0;
+    width: 300px;
+  }
+  footer {
+    align-items: center;
+    column-gap: 20px;
+    max-height: 10vh;
+  }
+  footer .socials-icons {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
